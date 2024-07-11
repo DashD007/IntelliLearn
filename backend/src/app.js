@@ -9,7 +9,7 @@ import practiceRouter from "./routes/practice.route.js"
 
 const app = express();
 const corsOption = {
-    origin:"http://localhost:3000",
+    origin:"https://intellilearn-frontend.vercel.app",
     credentials:true,
 }
 app.use(cors(corsOption));
