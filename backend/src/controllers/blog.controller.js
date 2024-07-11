@@ -139,7 +139,6 @@ const getAllBlogsOfUser = asyncHandler(async(req,res) => {
 const writeBlog = asyncHandler(async(req,res) => {
     const {title,content,tag} = req.body;
     const bannerFilePath = req.file?.path;
-    console.log("file path",req.file);
     if(!(title && content)){
         throw new apiError(404,"title or content is missing");
     }
